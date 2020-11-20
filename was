@@ -1,0 +1,128 @@
+S3
+
+
+//Create bucket
+Name
+Uncheck block
+Check warning
+Create bucket 
+
+//Click bucket
+
+//Upload HTML file
+Upload
+
+//Object action
+Make public
+
+//Destination 
+Click file
+Object url 
+
+//load url into new tab
+
+//at last
+- Delete HTML file
+- Delete bucket
+
+
+
+//In console
+
+//Launch instance
+
+//1
+Amazon Ami(first link) 
+Select
+
+//2
+Click Next
+
+//3
+Click Next 
+
+//4
+Click Next 
+
+//5
+Add tag 
+key - name
+value - some name
+Click Next
+
+//6
+Add rule
+Change Custom tcp to http 
+Change Custom to anywhere 
+Click Review and launch
+
+//7
+Click Launch(new box appears)
+Create new key pair 
+key pair Name Demo
+Download key pair
+Click Launch instance
+
+
+//Click View instance
+
+
+//Click check box of that instance
+
+
+//Download putty and puttygen
+Go to Putty.org
+In Alternative binary file
+- download Putty.exe(first file)
+- download Puttygen.exe(last but one file)
+
+//first
+Open puttygen file
+Click Load
+Select the downloaded file
+Open file
+Click Ok
+Save private key
+Same name(key pair name(above given as demo)) but no . and all
+Close puttygen
+ 
+//next
+Putty open
+Public ipv4 address copy(aws to putty)
+In Category 
+  -	Ssh 
+    - Auth 
+.ppk 
+Click Open
+Click Open
+Click Yes
+
+//Commands in command box after clicking yes
+
+  -	ec2-user
+  -	sudo su 
+  -	yum update –y
+  -	yum install httpd –y
+  -	cd /var/www/html (directory address)
+  -	ls (list of files)
+  -	nano index.html (name file and write html code)
+  -	Ctrl x (to exit)
+  -	Y (to save)
+  -	Enter (to go to command box)
+  -	ls (list of files now index.html is also viewed)
+  -	service httpd start (activating the link address)
+
+//copy the address and paste in new tab the html codes output is displayed there
+
+//at last
+  -	Stop instance
+  -	Terminate instance
+
+
+
+
+
+
+
+
+
